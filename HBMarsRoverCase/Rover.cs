@@ -105,6 +105,10 @@ namespace HBMarsRoverCase
         {
             return direction;
         }
+        public void sayLocation()
+        {
+            Console.WriteLine(this.getPointX().ToString() + " " + this.getPointY().ToString() + " " + this.getDirection());
+        }
     }
     public enum Directions
     {

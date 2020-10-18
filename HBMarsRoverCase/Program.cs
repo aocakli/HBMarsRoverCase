@@ -19,12 +19,11 @@ namespace HBMarsRoverCase
                     var startX = int.Parse(startPointAndDirection[0]);
                     var startY = int.Parse(startPointAndDirection[1]);
                     var direction = startPointAndDirection[2];
-                    Rover rover = new Rover(startX, startY, (Directions)Enum.Parse(typeof(Directions),direction));
+                    Rover rover = new Rover(startX, startY, (Directions)Enum.Parse(typeof(Directions), direction));
                     Console.WriteLine("Please write move order (LMR)");
                     var moveOrder = Console.ReadLine();
-                    rover.startAction(maxX,maxY,moveOrder);
-                    Console.WriteLine(rover.getPointX().ToString() + " " + rover.getPointY().ToString() + " " + rover.getDirection());
-
+                    rover.startAction(maxX, maxY, moveOrder);
+                    rover.sayLocation();
                 }
                 catch (Exception ex)
                 {
