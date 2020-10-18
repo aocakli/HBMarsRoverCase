@@ -36,6 +36,7 @@ namespace HBMarsRoverCase
                 if (this.getPointX() < 0 || this.getPointX() > maxX || this.getPointY() < 0 || this.getPointY() > maxY)
                 {
                     Console.WriteLine("This rover is out of map");
+                    return;
                 }
             }
         }
